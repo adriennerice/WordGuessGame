@@ -26,7 +26,7 @@ function start()
   lives = 5;
 
   answer = seaCreatures[Math.floor(Math.random() * seaCreatures.length)];
-
+  
   for(var i = 0; i < answer.length; i++)
     {
     lettersGuessed[i] = "_";
@@ -49,14 +49,14 @@ function check(){
      // Save user key press as lowercase letter
      userGuess = event.key.toLowerCase(); //checks if a string? 
      
-    // Check if only a string was entered
+    // ***Check if only a string was entered
     
 
      // [Check if letter guessed is already guessed]
      // Guess letter and show if in word
      for(var i = 0; i < answer.length; i++)
      {
-      if(lettersGuessed.indexOf(userGuess) < 0) // issue if word has multiple of same letter
+      if(lettersGuessed.indexOf(userGuess) < 0) // ***issue if word has multiple of same letter
       {
         if(userGuess === answer[i])
         {
@@ -97,47 +97,12 @@ function check(){
         wins ++;  //output wins
         start();
       }
-     }
-
-    
-
-     
-    
-
-  
+     }  
 };
 
 
 //Invoke functions
 start();
 check();
-
-// Next, we give JavaScript a function to execute when onkeyup event fires.
-// document.onkeyup = function(event) {
-
-//   var userText = event.key;  
-  
-//   if (guessTotal == 5)
-//   {
-//     console.log("Game over. Out of guesses");
-//   }
-//   else {
-//     for(var i = 0; i < answer.length; i++)
-//     {
-//           if (userText === answer.charAt(i))
-//           {
-//             console.log(answer[i]);
-//           } 
-//           else 
-//           {
-//             console.log("_" + " ");
-//           }
-//     }
-//       guessTotal++; 
-//     }
-  
-
-  
-// };
 
 
