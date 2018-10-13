@@ -1,3 +1,20 @@
 body {
-    background-image: url("/assets/images/star.jpg");
+    
+    font-size: 90px;
 }
+
+#word {
+    font-size: 80px;    
+    letter-spacing: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.font {
+    font-size: 50px;
+}
+
+
+
